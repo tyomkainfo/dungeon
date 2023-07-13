@@ -1,0 +1,21 @@
+.talents {
+  padding: 40px 0;
+  background-color: var(--super-black);
+}
+
+.talents .h1-super-big {
+  margin-bottom: 20px;
+}
+
+.talents-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px 0;
+  max-width: 1360px;
+  margin-inline: auto;
+
+  @media (min-width: 992px) {
+    justify-content: space-between;
+  }
+}

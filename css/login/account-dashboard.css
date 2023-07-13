@@ -1,0 +1,224 @@
+.account-dashboard-title {
+  background-color: var(--super-black);
+}
+
+.account-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1080px;
+  padding: 40px 0;
+  margin-inline: auto;
+
+  @media (min-width: 992px) {
+    padding: 80px 0;
+  }
+}
+
+.account-dashboard-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.account-head-welcome {
+  display: flex;
+  gap: 10px;
+
+  @media (min-width: 440px) {
+    gap: 30px;
+  }
+}
+
+.account-welcome-name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.account-dashboard-order {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+}
+
+.account-order-history {
+  padding: 10px 15px;
+  border: 1px solid var(--dark-grey);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.order-history-column {
+  width: fit-content;
+  min-width: fit-content;
+}
+
+.order-history-head {
+  width: 100%;
+  color: var(--dark-grey);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 170%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--dark-grey);
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+}
+
+.order-history-data {
+  padding-top: 5px;
+  color: var(--super-black);
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 27px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+}
+.order-history-data a {
+  color: var(--super-black);
+  cursor: pointer;
+}
+
+.account-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+}
+.account-addresses-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.account-addresses-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.account-details .address-default {
+  color: var(--super-black);
+  padding-bottom: 7px;
+}
+
+.account-details-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.account-details-info p {
+  color: var(--dark-grey);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.11px;
+
+  @media (min-width: 576px) {
+    font-size: 22px;
+  }
+}
+
+.account-details-address {
+  width: fit-content;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--super-black);
+}
+
+.account-following {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 10px;
+}
+
+.account-following-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+}
+
+.following-card {
+  color: var(--super-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 242px;
+  min-width: 162px;
+  width: 100%;
+}
+
+.watch-later {
+  padding: 10px;
+}
+
+.watch-later-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.watch-later-btn-container {
+  display: flex;
+  gap: 10px;
+}
+
+.watch-later-carousel-container {
+  padding: 10px 0;
+}
+
+.watch-later-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  max-width: 353px;
+}
+
+.watch-later-img-block {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.watch-later-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.watch-later-card-date {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--super-black);
+  text-transform: uppercase;
+}
+.watch-later-card .p-mid-medium {
+  text-transform: uppercase;
+}
+
+.watch-later-card .p-small-medium {
+  color: var(--charcoal);
+}
+
+.order-details-link {
+  width: fit-content;
+  padding-top: 10px;
+  color: var(--super-black);
+}

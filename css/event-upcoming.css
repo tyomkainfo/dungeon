@@ -1,0 +1,21 @@
+.event-upcoming {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17.5px;
+  justify-content: center;
+
+  @media (min-width: 1260px) {
+    justify-content: start;
+  }
+}
+
+.event-upcoming-card {
+  width: 305px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--super-black);
+  text-align: center;
+  color: var(--white);
+}

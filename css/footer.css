@@ -1,0 +1,161 @@
+footer {
+  padding: 20px 0;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    padding: 40px 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 40px 0;
+  }
+}
+
+.footer .container {
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 60px;
+  }
+}
+
+footer .container.d-flex {
+  @media (min-width: 992px) {
+    gap: 20px;
+  }
+}
+
+.sing-up {
+  margin-bottom: 30px;
+
+  @media (min-width: 992px) {
+    max-width: 335px;
+    padding-right: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.sing-up-send {
+  width: 100%;
+  padding: 16px 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.sing-up .btn-red {
+  padding: 20px 30px;
+  margin-bottom: 0;
+  width: 100%;
+
+  @media (min-width: 576px) {
+    width: fit-content;
+  }
+
+  @media (min-width: 992px) {
+    width: 100%;
+  }
+}
+
+.social-media {
+  width: fit-content;
+  gap: 30px;
+
+  @media (min-width: 992px) {
+    margin: 30px 0 60px;
+  }
+}
+
+.navigation-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (min-width: 992px) {
+    max-width: fit-content;
+    width: 100%;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 315px;
+  }
+}
+.navigation-block h5 {
+  font-family: 'TradeGothic', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  max-width: 90px;
+  min-height: 40px;
+  text-align: center;
+
+  @media (min-width: 390px) {
+    max-width: 120px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 540px) {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.navigation-block ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.navigation-block ul li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+
+  @media (min-width: 540px) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.navigation-block a {
+  color: var(--grey);
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  width: 100%;
+
+  @media (min-width: 992px) {
+    padding-top: 30px;
+  }
+}
+.footer-info p {
+  color: var(--grey);
+  font-size: 8px;
+  line-height: 140%;
+
+  @media (min-width: 540px) {
+    font-size: 10px;
+  }
+}
+.footer-info .separator {
+  user-select: none;
+}

@@ -1,0 +1,26 @@
+.badge {
+  padding: 4px 6px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.badge-yellow {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+.badge-sale {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.badge-sold {
+  background-color: #e7e7e7;
+  color: var(--charcoal);
+}
+
+.badge-super-black {
+  background-color: var(--super-black);
+  color: var(--white);
+}

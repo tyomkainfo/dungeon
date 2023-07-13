@@ -1,0 +1,49 @@
+.describe-block {
+  padding: 10px 0;
+}
+
+.describe-block p {
+  gap: 5px;
+  padding: 0px 10px;
+  margin-bottom: 0;
+  box-shadow: 1px 0 0 0 #828694;
+  transition: color 0.3s ease-in-out;
+
+  @media (min-width: 576px) {
+    gap: 8px;
+    padding: 5px 20px;
+  }
+
+  @media (min-width: 996px) {
+    gap: 10px;
+    padding: 10px 40px;
+  }
+}
+
+.describe-block p svg {
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: 576px) {
+    width: 21px;
+    height: 20px;
+  }
+}
+
+.describe-block p:last-child {
+  box-shadow: none;
+}
+
+.describe-block p span {
+  font-weight: bold;
+  font-size: 8px;
+  line-height: normal;
+
+  @media (min-width: 576px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 996px) {
+    font-size: 16px;
+  }
+}

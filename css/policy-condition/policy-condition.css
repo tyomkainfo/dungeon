@@ -1,0 +1,14 @@
+.policy-condition .container {
+  max-width: 1000px;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: justify;
+
+  @media (min-width: 992px) {
+    gap: 30px;
+    padding: 60px 10px;
+    text-align: inherit;
+  }
+}

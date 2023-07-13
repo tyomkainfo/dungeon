@@ -1,0 +1,38 @@
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tab {
+  border: 0;
+  padding: 8px 15px;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--charcoal);
+  background: transparent;
+  border-radius: 25px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+
+  font-family: 'TradeGothic', sans-serif;
+  font-weight: bold;
+
+  @media (min-width: 576px) {
+    padding: 15px 30px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.tab:hover {
+  color: var(--super-black);
+  background-color: var(--lightgrey);
+}
+
+.tab.active {
+  color: var(--white);
+  background-color: var(--red);
+}

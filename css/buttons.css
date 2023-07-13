@@ -1,0 +1,143 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: var(--white);
+  font-family: 'TradeGothic', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 12px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: background-color 0.3s ease-in-out;
+
+  @media (min-width: 576px) {
+    padding: 20px 30px;
+    font-size: 16px;
+  }
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+}
+
+.btn-without-text {
+  padding: 5px;
+}
+
+/* BUTTON RED */
+.btn-red {
+  background-color: var(--red);
+}
+
+.btn-red:hover {
+  color: var(--white);
+  background-color: #cc0000;
+}
+
+.btn-red:active {
+  color: var(--white);
+  background-color: #990000;
+}
+
+/* BUTTON BLUE */
+.btn-blue {
+  background-color: var(--blue);
+}
+
+.btn-blue:hover {
+  color: var(--white);
+  background-color: #0d8be5;
+}
+
+.btn-blue:active {
+  color: var(--white);
+  background-color: #0c79cb;
+}
+
+/* BUTTON BLACK */
+.btn-black {
+  background-color: var(--black);
+}
+
+.btn-black:hover {
+  color: var(--white);
+  background-color: #2a2828;
+}
+
+.btn-black:active {
+  color: var(--white);
+  background-color: #272525;
+}
+
+/* BUTTON YELLOW */
+.btn-yellow {
+  color: var(--black);
+  background-color: var(--yellow);
+}
+
+.btn-yellow:hover {
+  color: var(--black);
+  background-color: #e3bb1b;
+}
+
+.btn-yellow:active {
+  color: var(--black);
+  background-color: #caa919;
+}
+
+/* BUTTON GREY */
+.btn-grey {
+  color: var(--white);
+  background-color: var(--charcoal);
+}
+
+.btn-grey:hover {
+  color: var(--white);
+  background-color: #82869433;
+}
+
+.btn-grey:active {
+  color: var(--white);
+  background-color: #82869482;
+}
+
+/* BUTTON OUTLINE GREY */
+.btn-outline-grey {
+  border: 1px solid #9d9d9d;
+  color: var(--black);
+}
+
+.btn-outline-grey:hover {
+  color: var(--black);
+  background-color: #e6e6e633;
+}
+
+.btn-outline-grey:active {
+  color: var(--black);
+  background-color: #d8d8d882;
+}
+
+/* BUTTON OUTLINE BLUE */
+.btn-outline-blue {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.btn-outline-blue:hover {
+  color: var(--blue);
+  background-color: #0e9aff33;
+}
+
+.btn-outline-blue:active {
+  color: var(--blue);
+  background-color: #0e9aff82;
+}

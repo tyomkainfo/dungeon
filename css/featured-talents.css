@@ -1,0 +1,45 @@
+.featured-talents {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.featured-talents .h1-mid-bold {
+  color: var(--white);
+  font-size: 30px;
+
+  @media (min-width: 400px) {
+    font-size: 36px;
+  }
+
+  @media (min-width: 576px) {
+    font-size: 42px;
+  }
+}
+
+.featured-talents-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 10px;
+  justify-content: center;
+
+  @media (min-width: 1260px) {
+    justify-content: space-between;
+  }
+}
+
+.featured-talents-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 10px;
+  max-width: 310px;
+  text-align: center;
+  color: var(--white);
+}
+
+.featured-talents-card-img {
+  max-width: 288px;
+  border-radius: 10px;
+  overflow: hidden;
+}

@@ -1,0 +1,25 @@
+.scroll-grey {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  @media (min-width: 768px) {
+    padding: 20px 30px;
+  }
+
+  @media (min-width: 992px) {
+    overflow-x: inherit;
+  }
+}
+
+.scroll-grey::-webkit-scrollbar {
+  width: 40%;
+  height: 16px;
+  background-color: transparent;
+}
+
+.scroll-grey::-webkit-scrollbar-thumb {
+  border: 7px solid white;
+  background-color: var(--grey);
+  border-radius: 20px;
+}

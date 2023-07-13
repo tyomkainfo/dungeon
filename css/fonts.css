@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/satoshi/Satoshi-Regular.eot');
+  src: url('../fonts/satoshi/Satoshi-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/satoshi/Satoshi-Regular.woff2') format('woff2'),
+    url('../fonts/satoshi/Satoshi-Regular.woff') format('woff'),
+    url('../fonts/satoshi/Satoshi-Regular.ttf') format('truetype'),
+    url('../fonts/satoshi/Satoshi-Regular.svg#Satoshi-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/satoshi/Satoshi-Bold.eot');
+  src: url('../fonts/satoshi/Satoshi-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/satoshi/Satoshi-Bold.woff2') format('woff2'),
+    url('../fonts/satoshi/Satoshi-Bold.woff') format('woff'),
+    url('../fonts/satoshi/Satoshi-Bold.ttf') format('truetype'),
+    url('../fonts/satoshi/Satoshi-Bold.svg#Satoshi-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/satoshi/Satoshi-Medium.eot');
+  src: url('../fonts/satoshi/Satoshi-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/satoshi/Satoshi-Medium.woff2') format('woff2'),
+    url('../fonts/satoshi/Satoshi-Medium.woff') format('woff'),
+    url('../fonts/satoshi/Satoshi-Medium.ttf') format('truetype'),
+    url('../fonts/satoshi/Satoshi-Medium.svg#Satoshi-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TradeGothic';
+  src: url('../fonts/trade-gothic/TradeGothicLT.eot');
+  src: url('../fonts/trade-gothic/TradeGothicLT.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/trade-gothic/TradeGothicLT.woff2') format('woff2'),
+    url('../fonts/trade-gothic/TradeGothicLT.woff') format('woff'),
+    url('../fonts/trade-gothic/TradeGothicLT.ttf') format('truetype'),
+    url('../fonts/trade-gothic/TradeGothicLT.svg#TradeGothicLT') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TradeGothic';
+  src: url('../fonts/trade-gothic/TradeGothicLT-Bold.eot');
+  src: url('../fonts/trade-gothic/TradeGothicLT-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/trade-gothic/TradeGothicLT-Bold.woff2') format('woff2'),
+    url('../fonts/trade-gothic/TradeGothicLT-Bold.woff') format('woff'),
+    url('../fonts/trade-gothic/TradeGothicLT-Bold.ttf') format('truetype'),
+    url('../fonts/trade-gothic/TradeGothicLT-Bold.svg#TradeGothicLT-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

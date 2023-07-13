@@ -1,0 +1,160 @@
+.search-dropdown {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  top: 0%;
+  left: 0;
+  height: 100vh;
+
+  transition: all 0.5s;
+  transform: translate(0%, -150%);
+
+  @media (min-width: 996px) {
+    height: fit-content;
+  }
+}
+
+.search-dropdown.open {
+  transition: all 0.5s;
+  transform: translate(0%, 0%);
+}
+
+.search-dropdown-head {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  padding: 20px 20px;
+  background-color: var(--super-black);
+
+  @media (min-width: 540px) {
+    flex-wrap: nowrap;
+    justify-content: end;
+  }
+
+  @media (min-width: 960px) {
+    justify-content: center;
+  }
+}
+
+.search-dropdown .logo {
+  @media (min-width: 540px) {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.search-input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (min-width: 540px) {
+    max-width: calc(100vw - 190px);
+  }
+
+  @media (min-width: 960px) {
+    max-width: 490px;
+  }
+
+  @media (min-width: 1100px) {
+    max-width: 690px;
+  }
+}
+
+.search-input {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  border-radius: 45px;
+
+  padding: 6px 10px;
+  background-color: var(--white);
+  overflow: hidden;
+
+  @media (min-width: 540px) {
+    padding: 16px 30px;
+  }
+
+  @media (min-width: 720px) {
+    max-width: 660px;
+    padding: 16px 30px;
+  }
+}
+
+.search-input-icon {
+  display: flex;
+  max-width: 30px;
+  cursor: pointer;
+}
+
+.search-close {
+}
+
+.search-input input {
+  font-family: 'Satoshi';
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+.search-input input::placeholder {
+  color: var(--charcoal);
+  font-size: 14px;
+  vertical-align: center;
+
+  @media (min-width: 540px) {
+    font-size: 18px;
+  }
+}
+
+.search-offer-container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: var(--white);
+
+  @media (min-width: 996px) {
+    height: fit-content;
+  }
+}
+
+.search-offer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 650px;
+  padding: 10px 0;
+  margin-bottom: 0;
+  background-color: var(--white);
+
+  @media (min-width: 960px) {
+    max-width: 460px;
+    margin-inline: auto;
+  }
+
+  @media (min-width: 1100px) {
+    max-width: 650px;
+  }
+}
+
+.search-offer h5 {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--super-black);
+}
+
+.search-offer a {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 17.5px;
+  color: var(--charcoal);
+}

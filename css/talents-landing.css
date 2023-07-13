@@ -1,0 +1,147 @@
+.talents-landing {
+  background-color: var(--super-black);
+  padding: 20px 0;
+
+  @media (min-width: 992px) {
+    padding: 40px 0;
+  }
+}
+
+.talents-landing-container {
+  padding: 20px;
+  max-width: 1360px;
+  margin-inline: auto;
+
+  @media (min-width: 992px) {
+    padding: 40px;
+  }
+}
+
+.talents-landing .info-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 992px) {
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+.talents-landing .info-block-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: 992px) {
+    max-width: 620px;
+    width: 100%;
+  }
+}
+
+.talents-landing .info-block-content .head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--white);
+
+  @media (min-width: 992px) {
+    justify-content: start;
+  }
+}
+
+.talents-landing .info-block-content .btn.btn-blue {
+  font-size: 12px;
+  padding: 5px 10px;
+  max-height: 35px;
+  gap: 5px;
+
+  @media (min-width: 400px) {
+    gap: 10px;
+    padding: 5px 20px;
+    font-size: 16px;
+  }
+}
+
+.talents-landing .info-block-content .p-mid-regular {
+  text-align: justify;
+  color: var(--grey);
+}
+
+.talents-landing .info-block-content .content-img-container {
+  display: flex;
+  border-radius: 20px;
+  max-width: 620px;
+  overflow: hidden;
+
+  @media (min-width: 576px) {
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+.talents-landing .info-block-content .individual-data {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.talents-landing .info-block-content .individual-data-item {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.individual-data-item-info {
+  width: 140px;
+}
+
+.individual-data-item-description {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.talents-landing .info-block-content .social-media {
+  margin: 0;
+}
+
+.talents-landing .img-container {
+  display: none;
+
+  @media (min-width: 992px) {
+    display: block;
+    min-width: 480px;
+    max-width: 620px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+}
+
+.personal-photo-container {
+  display: flex;
+  max-width: 307px;
+}
+
+.featured-carousel-wrapper {
+  padding-top: 100px;
+}
+.featured-carousel-wrapper .h1-mid-bold {
+  font-size: 28px;
+
+  @media (min-width: 375px) {
+    font-size: 36px;
+  }
+
+  @media (min-width: 576px) {
+    font-size: 42px;
+  }
+}

@@ -1,0 +1,31 @@
+.events {
+  padding-bottom: 40px;
+  background-color: var(--super-black);
+}
+
+.events .head-black-bg {
+  @media (min-width: 992px) {
+    padding: 120px 0;
+  }
+}
+
+.events .tabs-container {
+  margin-bottom: 40px;
+}
+.events-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1360px;
+  margin-inline: auto;
+}
+
+.events-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+
+  @media (min-width: 1440px) {
+    flex-wrap: nowrap;
+  }
+}

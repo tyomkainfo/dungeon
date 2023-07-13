@@ -1,0 +1,120 @@
+.tickets {
+  padding: 40px 0;
+  background-color: var(--super-black);
+}
+
+.tickets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20xp;
+  margin-inline: auto;
+  max-width: 1360px;
+  padding: 10px;
+}
+
+.tickets-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: var(--black);
+
+  @media (min-width: 576px) {
+    padding: 40px;
+  }
+
+  @media (min-width: 992px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1200px) {
+    justify-content: start;
+    gap: 40px;
+  }
+}
+
+.tickets-card-img {
+  min-width: 280px;
+  max-width: 305px;
+  border-radius: 12px;
+  overflow: hidden;
+
+  @media (min-width: 576px) {
+    min-width: 305px;
+  }
+}
+
+.tickets-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  max-width: fit-content;
+
+  @media (min-width: 576px) {
+    min-width: 360px;
+  }
+
+  @media (min-width: 992px) {
+    text-align: left;
+    align-items: start;
+  }
+
+  @media (min-width: 1200px) {
+    gap: 15px;
+  }
+}
+.tickets-card-content .title {
+  font-family: 'TradeGothic', 'sans-serif';
+  font-size: 36x;
+  font-weight: bold;
+  max-width: 420px;
+  line-height: 100%;
+
+  @media (min-width: 1200px) {
+    font-size: 48px;
+  }
+}
+
+.tickets-card-btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  max-width: fit-content;
+
+  @media (min-width: 400px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 992px) {
+    margin-left: auto;
+  }
+}
+
+.tickets-card-btns .btn.btn-red {
+  font-size: 10px;
+
+  @media (min-width: 400px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 10px;
+    padding: 15px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    padding: 20px 30px;
+  }
+}
+
+.tickets .load-more {
+  margin-inline: auto;
+}
