@@ -1,32 +1,51 @@
-@import './css/tabs.css';
-@import './css/star.css';
-@import './css/logo.css';
+@import './css/badges.css';
+@import './css/buttons.css';
+@import './css/vybe_input.css';
+@import './css/cart/details.css';
+@import './css/cart/information.css';
+@import './css/cart/shipping.css';
+@import './css/cart/success.css';
+@import './css/cart/payment.css';
+@import './css/colors.css';
+@import './css/connect.css';
+@import './css/describe-block.css';
+@import './css/dungeon/dungeon-landing.css';
+@import './css/dungeon/dungeon-live-replays-trending.css';
+@import './css/dungeon/dungeon-live-replays-trending.css';
+@import './css/dungeon/dungeon.css';
+@import './css/dungeon/video-player.css';
+@import './css/event-details.css';
+@import './css/event-page.css';
+@import './css/event-upcoming.css';
+@import './css/featured-talents.css';
 @import './css/fonts.css';
 @import './css/footer.css';
-@import './css/review.css';
-@import './css/topics.css';
-@import './css/colors.css';
 @import './css/header.css';
-@import './css/badges.css';
-@import './css/scroll.css';
-@import './css/connect.css';
-@import './css/tickets.css';
-@import './css/buttons.css';
-@import './css/talents.css';
-@import './css/event-page.css';
-@import './css/login/login.css';
-@import './css/login/create.css';
-@import './css/event-details.css';
-@import './css/dungeon-pages.css';
-@import './css/describe-block.css';
-@import './css/event-upcoming.css';
-@import './css/talents-landing.css';
-@import './css/search-dropdown.css';
-@import './css/featured-talents.css';
-@import './css/login/account-input.css';
-@import './css/login/reset-password.css';
 @import './css/login/account-dashboard.css';
+@import './css/login/account-input.css';
+@import './css/login/create.css';
+@import './css/login/login.css';
+@import './css/login/reset-password.css';
+@import './css/logo.css';
+@import './css/overlay.css';
 @import './css/policy-condition/policy-condition.css';
+@import './css/product-recall.css';
+@import './css/review.css';
+@import './css/scroll.css';
+@import './css/search-dropdown.css';
+@import './css/service/about.css';
+@import './css/service/faq.css';
+@import './css/service/news-details.css';
+@import './css/service/news.css';
+@import './css/shop-details.css';
+@import './css/shop.css';
+@import './css/side-menu-cart.css';
+@import './css/star.css';
+@import './css/tabs.css';
+@import './css/talents-landing.css';
+@import './css/talents.css';
+@import './css/tickets.css';
+@import './css/topics.css';
 
 /* RESET MAIN CLASSES */
 
@@ -63,6 +82,8 @@ p {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /* MAIN CLASSES */
 .container {
@@ -138,11 +159,23 @@ ul {
 }
 
 .text-grey {
-  color: #c5c5c5;
+  color: var(--grey);
+}
+
+.text-grey-md {
+  color: var(--grey-medium);
+}
+
+.text-grey-dark {
+  color: var(--grey-medium);
 }
 
 .text-gothic {
   font-family: 'TradeGothic', sans-serif;
+}
+
+.text-gilroy {
+  font-family: Gilroy, sans-serif;
 }
 
 .img {
@@ -155,7 +188,7 @@ ul {
   position: relative;
   height: 100%;
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     overflow-y: inherit;
 
     position: static;
@@ -199,7 +232,7 @@ ul {
     letter-spacing: -4px;
   }
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     font-size: 80px;
     letter-spacing: -4px;
   }
@@ -246,7 +279,7 @@ ul {
     width: 630px;
   }
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     justify-content: space-between;
   }
 
@@ -264,7 +297,7 @@ ul {
   display: none;
   margin-top: 155px;
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     display: flex;
   }
 
@@ -587,7 +620,7 @@ ul {
     padding: 0 50px;
   }
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     padding: 0 60px;
   }
 }
@@ -710,7 +743,7 @@ ul {
     width: 630px;
   }
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     justify-content: space-between;
   }
 
@@ -727,7 +760,7 @@ ul {
   display: none;
   margin-top: 136px;
 
-  @media (min-width: 996px) {
+  @media (min-width: 992px) {
     display: flex;
   }
 

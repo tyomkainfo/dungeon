@@ -1,12 +1,18 @@
 :root {
+  --white: #ffffff;
   --black: #2f2d2d;
   --super-black: #000;
-  --yellow: #fdd51e;
-  --red: #ff0000;
-  --grey: #c5c5c5;
   --lightgrey: #f2f6f9;
-  --blue: #0e9aff;
+  --grey: #c5c5c5;
+  --grey-medium: #848484;
   --charcoal: #828694;
-  --white: #ffffff;
   --dark-grey: #696969;
+  --yellow: #fdd51e;
+  --gainsboro: #d9d9d9;
+  --red: #ff0000;
+  --blue: #0e9aff;
+  --vybe-blue: #3843d0;
+  --graphite: #383838;
+  --darkSlate: #121212;
+  --overlay: rgba(40, 40, 40, 0.4);
 }

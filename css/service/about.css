@@ -1,0 +1,52 @@
+.about .title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  height: calc(100vw * 0.277);
+}
+
+.about .title::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../assets/images/about.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -1;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 20px 110px;
+  max-width: 1060px;
+
+  @media (min-width: 960px) {
+    padding: 60px 40px;
+  }
+
+  @media (min-width: 1140px) {
+    padding: 60px 0;
+  }
+}
+
+.about-img {
+  margin-bottom: 30px;
+  max-width: fit-content;
+}
+
+.about .container p {
+  color: var(--dark-grey);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.36px;
+}

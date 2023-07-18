@@ -1,3 +1,7 @@
+.policy-condition .h1-super-big.head-black-bg {
+  width: 100%;
+}
+
 .policy-condition .container {
   max-width: 1000px;
   padding: 30px 10px;

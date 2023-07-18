@@ -110,6 +110,19 @@
   background-color: #82869482;
 }
 
+.btn-apply {
+  padding: 13px 26px;
+  background-color: var(--gainsboro);
+  color: var(--grey-medium);
+  font-family: 'Neuzeit Grotesk', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: uppercase;
+  border: none;
+}
+
 /* BUTTON OUTLINE GREY */
 .btn-outline-grey {
   border: 1px solid #9d9d9d;

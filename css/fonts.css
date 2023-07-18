@@ -62,3 +62,55 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroy/Gilroy-Light.eot');
+  src: url('../fonts/gilroy/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gilroy/Gilroy-Light.woff2') format('woff2'),
+    url('../fonts/gilroy/Gilroy-Light.woff') format('woff'),
+    url('../fonts/gilroy/Gilroy-Light.ttf') format('truetype'),
+    url('Gilroy-Light.svg#Gilroy-Light') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroy/Gilroy-Semibold.eot');
+  src: url('../fonts/gilroy/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gilroy/Gilroy-Semibold.woff2') format('woff2'),
+    url('../fonts/gilroy/Gilroy-Semibold.woff') format('woff'),
+    url('../fonts/gilroy/Gilroy-Semibold.ttf') format('truetype'),
+    url('../fonts/gilroy/Gilroy-Semibold.svg#Gilroy-Semibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/gilroy/Gilroy-ExtraBold.eot');
+  src: url('../fonts/gilroy/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gilroy/Gilroy-ExtraBold.woff2') format('woff2'),
+    url('../fonts/gilroy/Gilroy-ExtraBold.woff') format('woff'),
+    url('../fonts/gilroy/Gilroy-ExtraBold.ttf') format('truetype'),
+    url('../fonts/gilroy/Gilroy-ExtraBold.svg#Gilroy-ExtraBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neuzeit Grotesk';
+  src: url('../fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.eot');
+  src: url('../fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.woff2') format('woff2'),
+    url('../fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.woff') format('woff'),
+    url('../fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.ttf') format('truetype'),
+    url('../fonts/neuzeit-grotesk/NeuzeitGroExt-Bla.svg#NeuzeitGroExt-Bla') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

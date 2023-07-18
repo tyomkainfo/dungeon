@@ -1,0 +1,60 @@
+.product-recall {
+  display: flex;
+  gap: 20px;
+}
+
+.product-recall-scale {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--lightgrey);
+  width: calc(100vw - 190px);
+  height: 20px;
+
+  @media (min-width: 576px) {
+    width: calc(100vw - 220px);
+  }
+
+  @media (min-width: 992px) {
+    width: 420px;
+  }
+}
+
+.product-recall-scale::after,
+.product-recall-scale.s1::after,
+.product-recall-scale.s2::after,
+.product-recall-scale.s3::after,
+.product-recall-scale.s4::after,
+.product-recall-scale.s5::after {
+  content: '';
+  display: block;
+  height: 20px;
+  width: 0;
+  background-color: red;
+}
+
+.product-recall-scale.s1::after {
+  width: 20%;
+}
+
+.product-recall-scale.s2::after {
+  width: 40%;
+}
+
+.product-recall-scale.s3::after {
+  width: 60%;
+}
+
+.product-recall-scale.s4::after {
+  width: 80%;
+}
+
+.product-recall-scale.s5::after {
+  width: 100%;
+}
+
+.product-recall .appraisal {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 140%;
+  color: var(--dark-grey);
+}

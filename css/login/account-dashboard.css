@@ -17,16 +17,31 @@
 
 .account-dashboard-head {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
   padding: 10px;
+
+  @media (min-width: 576px) {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
 }
 
 .account-head-welcome {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   gap: 10px;
 
   @media (min-width: 440px) {
     gap: 30px;
+  }
+
+  @media (min-width: 576px) {
+    justify-content: flex-start;
+    width: fit-content;
   }
 }
 
@@ -162,6 +177,14 @@
   max-width: 242px;
   min-width: 162px;
   width: 100%;
+}
+
+.following-card .h4-bold {
+  font-size: 16px;
+
+  @media (min-width: 992px) {
+    font-size: 24px;
+  }
 }
 
 .watch-later {

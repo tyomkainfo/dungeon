@@ -102,6 +102,14 @@
   }
 }
 
+.h2-bold-upper {
+  font-family: 'TradeGothic', sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .h4-medium {
   font-family: 'TradeGothic', sans-serif;
   font-weight: normal;
@@ -155,4 +163,20 @@
   font-weight: normal;
   font-size: 10px;
   line-height: 14px;
+}
+
+.p-crumps {
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.12px;
+  color: #848484;
+}
+
+.p-crumps.active {
+  font-weight: 800;
+  letter-spacing: 0.24px;
+
+  color: #121212;
 }

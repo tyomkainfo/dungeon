@@ -1,0 +1,146 @@
+.side-menu-cart {
+  position: relative;
+  right: calc(-100vw);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px;
+  width: 100%;
+  max-width: 520px;
+  height: 100%;
+  background-color: var(--white);
+  transition: all 0.33s ease-in-out;
+
+  @media (min-width: 576px) {
+    padding: 50px 30px 60px;
+  }
+}
+
+.side-menu-cart.open {
+  transform: translateX(-100%);
+}
+
+.side-menu-cart-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-bottom: 37px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.side-menu-cart-head .main .p-sm-medium {
+  color: var(--grey-medium);
+}
+
+.side-menu-cart-head .close {
+  display: flex;
+  max-width: 48px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.side-menu-cart-products {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 0;
+}
+
+.side-menu-cart-products-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+.side-menu-cart-products-card:not(:first-child) {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 10px;
+}
+
+.side-menu-cart-products-card .products-head {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+
+.side-menu-cart-products-card-img {
+  max-width: 65px;
+  max-height: 65px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.side-menu-cart-products-card-img img {
+  object-fit: cover;
+}
+
+.side-menu-cart-products-card .products-head .p-sm-medium {
+  font-weight: 500;
+}
+
+.side-menu-cart-products-card .products-head .delete {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  max-width: 12px;
+  cursor: pointer;
+}
+
+.side-menu-cart-products-card .products-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 86px;
+}
+
+.side-menu-cart-products-card .products-footer-price {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  color: #383838;
+}
+
+.side-menu-cart-products-card .products-footer .cart-item_quantity {
+  border-radius: 5px;
+}
+
+.side-menu-cart-count {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  margin-top: auto;
+}
+
+.side-menu-cart-count-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.side-menu-cart-count-item:last-child {
+  margin-bottom: 20px;
+}
+
+.side-menu-cart-count-total {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-bottom: 40px;
+  border-top: 1px solid var(--gainsboro);
+}
+
+.side-menu-cart-count-total .total-bill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.side-menu-cart-count-total .total-bill .currency {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.12px;
+  color: var(--grey-medium);
+}

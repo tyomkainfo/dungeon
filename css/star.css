@@ -19,19 +19,27 @@
   gap: 4px;
 }
 
-.star {
+.star,
+.star-grey {
   display: block;
   width: 10px;
   height: 10px;
-  background-image: url('../assets/images/star.png');
   background-size: cover;
+}
+.star {
+  background-image: url('../assets/images/star.png');
+}
+
+.star-grey {
+  background-image: url('../assets/images/star-grey.png');
 }
 
 .star-container.md {
   gap: 6px;
 }
 
-.star-container.md > .star {
+.star-container.md > .star,
+.star-container.md > .star-grey {
   width: 15px;
   height: 15px;
 }

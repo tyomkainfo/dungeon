@@ -1,558 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dungeon</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../css/owl/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../css/owl/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="shortcut icon" href="../assets/svg/logo.svg" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dungeon</title>
 
-  <body>
-    <!-- HEADER -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/owl/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../css/owl/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="shortcut icon" href="../assets/svg/logo.svg" />
+</head>
 
-    <header class="bg-super-black position-relative">
-      <div class="header-overlay bg-super-black">
-        <div class="container d-flex align-items-center justify-content-between bg-super-black">
-          <ul class="header-nav d-flex flex-column flex-lg-row align-items-center">
-            <li><a href="#" class="text-uppercase text-lightgrey">dungeon+</a></li>
-            <li>
-              <a href="../event-pages/event.html" class="text-uppercase text-lightgrey">events</a>
-            </li>
-            <li><a href="#" class="text-uppercase text-lightgrey">talent</a></li>
-            <li><a href="#" class="text-uppercase text-lightgrey">tickets</a></li>
-            <li class="header-nav-account">
-              <a href="../login/login.html" class="account"
-                ><svg
-                  width="26"
-                  height="26"
-                  viewBox="0 0 26 26"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.3125 19.375C6.375 18.5625 7.5625 17.9219 8.875 17.4531C10.1875 16.9844 11.5625 16.75 13 16.75C14.4375 16.75 15.8125 16.9844 17.125 17.4531C18.4375 17.9219 19.625 18.5625 20.6875 19.375C21.4167 18.5208 21.9844 17.5521 22.3906 16.4688C22.7969 15.3854 23 14.2292 23 13C23 10.2292 22.026 7.86979 20.0781 5.92188C18.1302 3.97396 15.7708 3 13 3C10.2292 3 7.86979 3.97396 5.92188 5.92188C3.97396 7.86979 3 10.2292 3 13C3 14.2292 3.20312 15.3854 3.60938 16.4688C4.01562 17.5521 4.58333 18.5208 5.3125 19.375ZM13 14.25C11.7708 14.25 10.7344 13.8281 9.89062 12.9844C9.04688 12.1406 8.625 11.1042 8.625 9.875C8.625 8.64583 9.04688 7.60938 9.89062 6.76563C10.7344 5.92188 11.7708 5.5 13 5.5C14.2292 5.5 15.2656 5.92188 16.1094 6.76563C16.9531 7.60938 17.375 8.64583 17.375 9.875C17.375 11.1042 16.9531 12.1406 16.1094 12.9844C15.2656 13.8281 14.2292 14.25 13 14.25ZM13 25.5C11.2708 25.5 9.64583 25.1719 8.125 24.5156C6.60417 23.8594 5.28125 22.9688 4.15625 21.8438C3.03125 20.7188 2.14063 19.3958 1.48438 17.875C0.828125 16.3542 0.5 14.7292 0.5 13C0.5 11.2708 0.828125 9.64583 1.48438 8.125C2.14063 6.60417 3.03125 5.28125 4.15625 4.15625C5.28125 3.03125 6.60417 2.14063 8.125 1.48438C9.64583 0.828125 11.2708 0.5 13 0.5C14.7292 0.5 16.3542 0.828125 17.875 1.48438C19.3958 2.14063 20.7188 3.03125 21.8438 4.15625C22.9688 5.28125 23.8594 6.60417 24.5156 8.125C25.1719 9.64583 25.5 11.2708 25.5 13C25.5 14.7292 25.1719 16.3542 24.5156 17.875C23.8594 19.3958 22.9688 20.7188 21.8438 21.8438C20.7188 22.9688 19.3958 23.8594 17.875 24.5156C16.3542 25.1719 14.7292 25.5 13 25.5ZM13 23C14.1042 23 15.1458 22.8385 16.125 22.5156C17.1042 22.1927 18 21.7292 18.8125 21.125C18 20.5208 17.1042 20.0573 16.125 19.7344C15.1458 19.4115 14.1042 19.25 13 19.25C11.8958 19.25 10.8542 19.4115 9.875 19.7344C8.89583 20.0573 8 20.5208 7.1875 21.125C8 21.7292 8.89583 22.1927 9.875 22.5156C10.8542 22.8385 11.8958 23 13 23ZM13 11.75C13.5417 11.75 13.9896 11.5729 14.3438 11.2188C14.6979 10.8646 14.875 10.4167 14.875 9.875C14.875 9.33333 14.6979 8.88542 14.3438 8.53125C13.9896 8.17708 13.5417 8 13 8C12.4583 8 12.0104 8.17708 11.6562 8.53125C11.3021 8.88542 11.125 9.33333 11.125 9.875C11.125 10.4167 11.3021 10.8646 11.6562 11.2188C12.0104 11.5729 12.4583 11.75 13 11.75Z"
-                    fill="#F2F6F9"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ul>
+<body>
+  <!-- HEADER -->
 
-          <a href="../index.html" class="logo logo-main"
-            ><img class="img" src="../assets/svg/logo.svg" alt="logo"
-          /></a>
-
-          <div class="header-nav-side d-flex justify-content-center align-items-center">
-            <button
-              class="expand-more d-flex align-items-center text-uppercase bg-transparent border-0 text-lightgrey"
-            >
-              <span>shop</span>
-              <div>
-                <svg
-                  width="16"
-                  height="11"
-                  viewBox="0 0 16 11"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 10.2188L0.5 2.71875L2.25 0.96875L8 6.71875L13.75 0.96875L15.5 2.71875L8 10.2188Z"
-                    fill="#F2F6F9"
-                  />
-                </svg>
-              </div>
-            </button>
-
-            <a href="../login/login.html" class="account d-none d-lg-flex"
-              ><svg
-                width="26"
-                height="26"
-                viewBox="0 0 26 26"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+  <header class="bg-super-black position-relative">
+    <div class="header-overlay bg-super-black">
+      <div class="container d-flex align-items-center justify-content-between bg-super-black">
+        <ul class="header-nav d-flex flex-column flex-lg-row align-items-center">
+          <li>
+            <a href="../dungeon-pages/dungeon.html" class="text-uppercase text-lightgrey">dungeon+</a>
+          </li>
+          <li>
+            <a href="../event-pages/event.html" class="text-uppercase text-lightgrey">events</a>
+          </li>
+          <li>
+            <a href="../talents/talents.html" class="text-uppercase text-lightgrey">talent</a>
+          </li>
+          <li>
+            <a href="../tickets-page/tickets.html" class="text-uppercase text-lightgrey">tickets</a>
+          </li>
+          <li class="header-nav-account">
+            <a href="../login/login.html" class="account"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M5.3125 19.375C6.375 18.5625 7.5625 17.9219 8.875 17.4531C10.1875 16.9844 11.5625 16.75 13 16.75C14.4375 16.75 15.8125 16.9844 17.125 17.4531C18.4375 17.9219 19.625 18.5625 20.6875 19.375C21.4167 18.5208 21.9844 17.5521 22.3906 16.4688C22.7969 15.3854 23 14.2292 23 13C23 10.2292 22.026 7.86979 20.0781 5.92188C18.1302 3.97396 15.7708 3 13 3C10.2292 3 7.86979 3.97396 5.92188 5.92188C3.97396 7.86979 3 10.2292 3 13C3 14.2292 3.20312 15.3854 3.60938 16.4688C4.01562 17.5521 4.58333 18.5208 5.3125 19.375ZM13 14.25C11.7708 14.25 10.7344 13.8281 9.89062 12.9844C9.04688 12.1406 8.625 11.1042 8.625 9.875C8.625 8.64583 9.04688 7.60938 9.89062 6.76563C10.7344 5.92188 11.7708 5.5 13 5.5C14.2292 5.5 15.2656 5.92188 16.1094 6.76563C16.9531 7.60938 17.375 8.64583 17.375 9.875C17.375 11.1042 16.9531 12.1406 16.1094 12.9844C15.2656 13.8281 14.2292 14.25 13 14.25ZM13 25.5C11.2708 25.5 9.64583 25.1719 8.125 24.5156C6.60417 23.8594 5.28125 22.9688 4.15625 21.8438C3.03125 20.7188 2.14063 19.3958 1.48438 17.875C0.828125 16.3542 0.5 14.7292 0.5 13C0.5 11.2708 0.828125 9.64583 1.48438 8.125C2.14063 6.60417 3.03125 5.28125 4.15625 4.15625C5.28125 3.03125 6.60417 2.14063 8.125 1.48438C9.64583 0.828125 11.2708 0.5 13 0.5C14.7292 0.5 16.3542 0.828125 17.875 1.48438C19.3958 2.14063 20.7188 3.03125 21.8438 4.15625C22.9688 5.28125 23.8594 6.60417 24.5156 8.125C25.1719 9.64583 25.5 11.2708 25.5 13C25.5 14.7292 25.1719 16.3542 24.5156 17.875C23.8594 19.3958 22.9688 20.7188 21.8438 21.8438C20.7188 22.9688 19.3958 23.8594 17.875 24.5156C16.3542 25.1719 14.7292 25.5 13 25.5ZM13 23C14.1042 23 15.1458 22.8385 16.125 22.5156C17.1042 22.1927 18 21.7292 18.8125 21.125C18 20.5208 17.1042 20.0573 16.125 19.7344C15.1458 19.4115 14.1042 19.25 13 19.25C11.8958 19.25 10.8542 19.4115 9.875 19.7344C8.89583 20.0573 8 20.5208 7.1875 21.125C8 21.7292 8.89583 22.1927 9.875 22.5156C10.8542 22.8385 11.8958 23 13 23ZM13 11.75C13.5417 11.75 13.9896 11.5729 14.3438 11.2188C14.6979 10.8646 14.875 10.4167 14.875 9.875C14.875 9.33333 14.6979 8.88542 14.3438 8.53125C13.9896 8.17708 13.5417 8 13 8C12.4583 8 12.0104 8.17708 11.6562 8.53125C11.3021 8.88542 11.125 9.33333 11.125 9.875C11.125 10.4167 11.3021 10.8646 11.6562 11.2188C12.0104 11.5729 12.4583 11.75 13 11.75Z"
-                  fill="#F2F6F9"
-                />
+                  fill="#F2F6F9" />
               </svg>
             </a>
+          </li>
+        </ul>
 
-            <button
-              class="search d-flex align-items-center text-uppercase bg-transparent border-0 text-lightgrey"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21.5 23.25L13.625 15.375C13 15.875 12.2812 16.2708 11.4688 16.5625C10.6562 16.8542 9.79167 17 8.875 17C6.60417 17 4.68229 16.2135 3.10938 14.6406C1.53646 13.0677 0.75 11.1458 0.75 8.875C0.75 6.60417 1.53646 4.68229 3.10938 3.10938C4.68229 1.53646 6.60417 0.75 8.875 0.75C11.1458 0.75 13.0677 1.53646 14.6406 3.10938C16.2135 4.68229 17 6.60417 17 8.875C17 9.79167 16.8542 10.6562 16.5625 11.4688C16.2708 12.2812 15.875 13 15.375 13.625L23.25 21.5L21.5 23.25ZM8.875 14.5C10.4375 14.5 11.7656 13.9531 12.8594 12.8594C13.9531 11.7656 14.5 10.4375 14.5 8.875C14.5 7.3125 13.9531 5.98438 12.8594 4.89062C11.7656 3.79688 10.4375 3.25 8.875 3.25C7.3125 3.25 5.98438 3.79688 4.89062 4.89062C3.79688 5.98438 3.25 7.3125 3.25 8.875C3.25 10.4375 3.79688 11.7656 4.89062 12.8594C5.98438 13.9531 7.3125 14.5 8.875 14.5Z"
-                  fill="#F2F6F9"
-                />
+        <a href="../index.html" class="logo logo-main"><img class="img" src="../assets/svg/logo.svg" alt="logo" /></a>
+
+        <div class="header-nav-side d-flex justify-content-center align-items-center">
+          <button class="expand-more d-flex align-items-center text-uppercase bg-transparent border-0 text-lightgrey">
+            <span>shop</span>
+            <div>
+              <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 10.2188L0.5 2.71875L2.25 0.96875L8 6.71875L13.75 0.96875L15.5 2.71875L8 10.2188Z"
+                  fill="#F2F6F9" />
               </svg>
-            </button>
+            </div>
+          </button>
 
-            <button
-              class="burger d-flex justify-content-center align-items-center d-lg-none bg-transparent border-0"
-            >
-              <svg
-                width="24"
-                height="16"
-                viewBox="0 0 24 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.75 15.5V13H23.25V15.5H0.75ZM0.75 9.25V6.75H23.25V9.25H0.75ZM0.75 3V0.5H23.25V3H0.75Z"
-                  fill="white"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
+          <a href="../login/login.html" class="account d-none d-lg-flex"><svg width="26" height="26" viewBox="0 0 26 26"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.3125 19.375C6.375 18.5625 7.5625 17.9219 8.875 17.4531C10.1875 16.9844 11.5625 16.75 13 16.75C14.4375 16.75 15.8125 16.9844 17.125 17.4531C18.4375 17.9219 19.625 18.5625 20.6875 19.375C21.4167 18.5208 21.9844 17.5521 22.3906 16.4688C22.7969 15.3854 23 14.2292 23 13C23 10.2292 22.026 7.86979 20.0781 5.92188C18.1302 3.97396 15.7708 3 13 3C10.2292 3 7.86979 3.97396 5.92188 5.92188C3.97396 7.86979 3 10.2292 3 13C3 14.2292 3.20312 15.3854 3.60938 16.4688C4.01562 17.5521 4.58333 18.5208 5.3125 19.375ZM13 14.25C11.7708 14.25 10.7344 13.8281 9.89062 12.9844C9.04688 12.1406 8.625 11.1042 8.625 9.875C8.625 8.64583 9.04688 7.60938 9.89062 6.76563C10.7344 5.92188 11.7708 5.5 13 5.5C14.2292 5.5 15.2656 5.92188 16.1094 6.76563C16.9531 7.60938 17.375 8.64583 17.375 9.875C17.375 11.1042 16.9531 12.1406 16.1094 12.9844C15.2656 13.8281 14.2292 14.25 13 14.25ZM13 25.5C11.2708 25.5 9.64583 25.1719 8.125 24.5156C6.60417 23.8594 5.28125 22.9688 4.15625 21.8438C3.03125 20.7188 2.14063 19.3958 1.48438 17.875C0.828125 16.3542 0.5 14.7292 0.5 13C0.5 11.2708 0.828125 9.64583 1.48438 8.125C2.14063 6.60417 3.03125 5.28125 4.15625 4.15625C5.28125 3.03125 6.60417 2.14063 8.125 1.48438C9.64583 0.828125 11.2708 0.5 13 0.5C14.7292 0.5 16.3542 0.828125 17.875 1.48438C19.3958 2.14063 20.7188 3.03125 21.8438 4.15625C22.9688 5.28125 23.8594 6.60417 24.5156 8.125C25.1719 9.64583 25.5 11.2708 25.5 13C25.5 14.7292 25.1719 16.3542 24.5156 17.875C23.8594 19.3958 22.9688 20.7188 21.8438 21.8438C20.7188 22.9688 19.3958 23.8594 17.875 24.5156C16.3542 25.1719 14.7292 25.5 13 25.5ZM13 23C14.1042 23 15.1458 22.8385 16.125 22.5156C17.1042 22.1927 18 21.7292 18.8125 21.125C18 20.5208 17.1042 20.0573 16.125 19.7344C15.1458 19.4115 14.1042 19.25 13 19.25C11.8958 19.25 10.8542 19.4115 9.875 19.7344C8.89583 20.0573 8 20.5208 7.1875 21.125C8 21.7292 8.89583 22.1927 9.875 22.5156C10.8542 22.8385 11.8958 23 13 23ZM13 11.75C13.5417 11.75 13.9896 11.5729 14.3438 11.2188C14.6979 10.8646 14.875 10.4167 14.875 9.875C14.875 9.33333 14.6979 8.88542 14.3438 8.53125C13.9896 8.17708 13.5417 8 13 8C12.4583 8 12.0104 8.17708 11.6562 8.53125C11.3021 8.88542 11.125 9.33333 11.125 9.875C11.125 10.4167 11.3021 10.8646 11.6562 11.2188C12.0104 11.5729 12.4583 11.75 13 11.75Z"
+                fill="#F2F6F9" />
+            </svg>
+          </a>
 
-        <div
-          class="shop-dropdown d-flex flex-column flex-lg-row justify-content-lg-center position-absolute bg-white"
-        >
-          <a
-            href="#"
-            class="shop-item d-flex flex-lg-column-reverse align-items-center justify-content-between justify-content-lg-center gap-3"
-          >
-            <p class="shop-item-title text-uppercase text-gothic mb-0">t-shirt</p>
-            <div
-              class="shop-item-img bg-lightgrey d-flex justify-content-center align-items-center"
-            >
-              <div class="shop-img-container d-flex justify-content-center align-items-center">
-                <img class="img" src="../assets/images/shop-droopdown/cap.png" alt="cap" />
-              </div>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="shop-item d-flex flex-lg-column-reverse align-items-center justify-content-between justify-content-lg-center gap-3"
-          >
-            <p class="shop-item-title text-uppercase text-gothic mb-0">SWEATSHIRTS</p>
-            <div
-              class="shop-item-img bg-lightgrey d-flex justify-content-center align-items-center"
-            >
-              <div class="shop-img-container d-flex justify-content-center align-items-center">
-                <img class="img" src="../assets/images/shop-droopdown/cap.png" alt="cap" />
-              </div>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="shop-item d-flex flex-lg-column-reverse align-items-center justify-content-between justify-content-lg-center gap-3"
-          >
-            <p class="shop-item-title text-uppercase text-gothic mb-0">COLLECTIBLES</p>
-            <div
-              class="shop-item-img bg-lightgrey d-flex justify-content-center align-items-center"
-            >
-              <div class="shop-img-container d-flex justify-content-center align-items-center">
-                <img class="img" src="../assets/images/shop-droopdown/cap.png" alt="cap" />
-              </div>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="shop-item d-flex flex-lg-column-reverse align-items-center justify-content-between justify-content-lg-center gap-3"
-          >
-            <p class="shop-item-title text-uppercase text-gothic mb-0">COLLECTIBLES</p>
-            <div
-              class="shop-item-img bg-lightgrey d-flex justify-content-center align-items-center"
-            >
-              <div class="shop-img-container d-flex justify-content-center align-items-center">
-                <img class="img" src="../assets/images/shop-droopdown/cap.png" alt="cap" />
-              </div>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="shop-item d-flex flex-lg-column-reverse align-items-center justify-content-between justify-content-lg-center gap-3"
-          >
-            <p class="shop-item-title text-uppercase text-gothic mb-0">COLLECTIBLES</p>
-            <div
-              class="shop-item-img bg-lightgrey d-flex justify-content-center align-items-center"
-            >
-              <div class="shop-img-container d-flex justify-content-center align-items-center">
-                <img class="img" src="../assets/images/shop-droopdown/cap.png" alt="cap" />
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="search-dropdown">
-          <div class="search-dropdown-head">
-            <a href="../index.html" class="logo"
-              ><img class="img" src="../assets/svg/logo.svg" alt="logo"
-            /></a>
+          <button class="search d-flex align-items-center text-uppercase bg-transparent border-0 text-lightgrey">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.5 23.25L13.625 15.375C13 15.875 12.2812 16.2708 11.4688 16.5625C10.6562 16.8542 9.79167 17 8.875 17C6.60417 17 4.68229 16.2135 3.10938 14.6406C1.53646 13.0677 0.75 11.1458 0.75 8.875C0.75 6.60417 1.53646 4.68229 3.10938 3.10938C4.68229 1.53646 6.60417 0.75 8.875 0.75C11.1458 0.75 13.0677 1.53646 14.6406 3.10938C16.2135 4.68229 17 6.60417 17 8.875C17 9.79167 16.8542 10.6562 16.5625 11.4688C16.2708 12.2812 15.875 13 15.375 13.625L23.25 21.5L21.5 23.25ZM8.875 14.5C10.4375 14.5 11.7656 13.9531 12.8594 12.8594C13.9531 11.7656 14.5 10.4375 14.5 8.875C14.5 7.3125 13.9531 5.98438 12.8594 4.89062C11.7656 3.79688 10.4375 3.25 8.875 3.25C7.3125 3.25 5.98438 3.79688 4.89062 4.89062C3.79688 5.98438 3.25 7.3125 3.25 8.875C3.25 10.4375 3.79688 11.7656 4.89062 12.8594C5.98438 13.9531 7.3125 14.5 8.875 14.5Z"
+                fill="#F2F6F9" />
+            </svg>
+          </button>
 
-            <div class="search-input-wrapper">
-              <div class="search-input">
-                <div class="search-input-icon">
-                  <img class="img" src="../assets/svg/search-black.svg" alt="search" />
-                </div>
-                <input type="text" placeholder="Search for T-Shirts, Hoodies, Events|" />
-              </div>
-
-              <div class="search-input-icon search-close">
-                <img class="img" src="../assets/svg/close.svg" alt="close" />
-              </div>
-            </div>
-          </div>
-          <div class="search-offer-container">
-            <ul class="search-offer">
-              <li><h5>Popular Searches</h5></li>
-              <li><a href="#">T-Shirts</a></li>
-              <li><a href="#">Hoodies</a></li>
-              <li><a href="#">Bret Hart Collectible</a></li>
-              <li><a href="#">Hats</a></li>
-            </ul>
-          </div>
+          <button class="burger d-flex justify-content-center align-items-center d-lg-none bg-transparent border-0">
+            <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.75 15.5V13H23.25V15.5H0.75ZM0.75 9.25V6.75H23.25V9.25H0.75ZM0.75 3V0.5H23.25V3H0.75Z"
+                fill="white" />
+            </svg>
+          </button>
         </div>
       </div>
-    </header>
-    <!-- END HEADER -->
 
-    <!-- TALENTS  -->
-    <section class="talents">
-      <h1 class="h1-super-big head-black-bg stars">TALENTS</h1>
-
-      <!-- TALENTS CONTAINER -->
-      <div class="talents-container">
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/aldis.jpg" alt="NICK ALDIS" />
+      <div class="shop-dropdown d-flex flex-column flex-lg-row justify-content-lg-center position-absolute bg-white">
+        <a href="#"
+          class="shop-item d-flex flex-lg-column-reverse align-items-center justify-content-between justify-content-lg-center gap-3">
+          <p class="shop-item-title text-uppercase text-gothic mb-0">t-shirt</p>
+          <div class="shop-item-img bg-lightgrey d-flex justify-content-center align-items-center">
+            <div class="shop-img-container d-flex justify-content-center align-items-center">
+              <img class="img" src="../assets/images/shop-droopdown/cap.png" alt="cap" />
+            </div>
           </div>
-          <h4 class="h4-bold">NICK ALDIS</h4>
         </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/masters.jpg" alt="CHRIS MASTERS" />
+        <a href="../shop/shop.html"
+          class="shop-item d-flex flex-lg-column-reverse align-items-center justify-content-between justify-content-lg-center gap-3">
+          <p class="shop-item-title text-uppercase text-gothic mb-0">SWEATSHIRTS</p>
+          <div class="shop-item-img bg-lightgrey d-flex justify-content-center align-items-center">
+            <div class="shop-img-container d-flex justify-content-center align-items-center">
+              <img class="img" src="../assets/images/shop-droopdown/cap.png" alt="cap" />
+            </div>
           </div>
-          <h4 class="h4-bold">CHRIS MASTERS</h4>
         </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/django.jpg" alt="DIRTY DJANGO" />
+        <a href="../shop/shop.html"
+          class="shop-item d-flex flex-lg-column-reverse align-items-center justify-content-between justify-content-lg-center gap-3">
+          <p class="shop-item-title text-uppercase text-gothic mb-0">COLLECTIBLES</p>
+          <div class="shop-item-img bg-lightgrey d-flex justify-content-center align-items-center">
+            <div class="shop-img-container d-flex justify-content-center align-items-center">
+              <img class="img" src="../assets/images/shop-droopdown/cap.png" alt="cap" />
+            </div>
           </div>
-          <h4 class="h4-bold">DIRTY DJANGO</h4>
         </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/smith.jpg" alt="HARRY SMITH" />
+        <a href="../shop/shop.html"
+          class="shop-item d-flex flex-lg-column-reverse align-items-center justify-content-between justify-content-lg-center gap-3">
+          <p class="shop-item-title text-uppercase text-gothic mb-0">COLLECTIBLES</p>
+          <div class="shop-item-img bg-lightgrey d-flex justify-content-center align-items-center">
+            <div class="shop-img-container d-flex justify-content-center align-items-center">
+              <img class="img" src="../assets/images/shop-droopdown/cap.png" alt="cap" />
+            </div>
           </div>
-          <h4 class="h4-bold">DIRTY DJANGO</h4>
         </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/pullman.jpg" alt="BRIAN PULLMAN JF" />
+        <a href="../shop/shop.html"
+          class="shop-item d-flex flex-lg-column-reverse align-items-center justify-content-between justify-content-lg-center gap-3">
+          <p class="shop-item-title text-uppercase text-gothic mb-0">COLLECTIBLES</p>
+          <div class="shop-item-img bg-lightgrey d-flex justify-content-center align-items-center">
+            <div class="shop-img-container d-flex justify-content-center align-items-center">
+              <img class="img" src="../assets/images/shop-droopdown/cap.png" alt="cap" />
+            </div>
           </div>
-          <h4 class="h4-bold">BRIAN PULLMAN JF</h4>
-        </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/jabari.jpg" alt="MO JABARI" />
-          </div>
-          <h4 class="h4-bold">MO JABARI</h4>
-        </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/singh.jpg" alt="RAJ SINGH" />
-          </div>
-          <h4 class="h4-bold">RAJ SINGH</h4>
-        </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/krimson.jpg" alt="KRIMSON" />
-          </div>
-          <h4 class="h4-bold">KRIMSON</h4>
-        </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/bruno.jpg" alt="BIG BRUNO" />
-          </div>
-          <h4 class="h4-bold">BIG BRUNO</h4>
-        </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/buldogs.jpg" alt="BILLINGTON BULLDOGS" />
-          </div>
-          <h4 class="h4-bold">BILLINGTON BULLDOGS</h4>
-        </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/boys.jpg" alt="BOLLYWOOD BOYS" />
-          </div>
-          <h4 class="h4-bold">BOLLYWOOD BOYS</h4>
-        </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/sager.jpg" alt="ZOE SAGER" />
-          </div>
-          <h4 class="h4-bold">ZOE SAGER</h4>
-        </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/taryn.jpg" alt="TARYN FROM ACCOUNTING" />
-          </div>
-          <h4 class="h4-bold">TARYN FROM ACCOUNTING</h4>
-        </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/lawless.jpg" alt="AVA LAWLESS" />
-          </div>
-          <h4 class="h4-bold">AVA LAWLESS</h4>
-        </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/moor.jpg" alt="SHAWN MOORE" />
-          </div>
-          <h4 class="h4-bold">SHAWN MOORE</h4>
-        </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/allen.jpg" alt="MICHAEL RICHARD ALLEN" />
-          </div>
-          <h4 class="h4-bold">MICHAEL RICHARD ALLEN</h4>
-        </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/blais.jpg" alt="MICHAEL BLAIS" />
-          </div>
-          <h4 class="h4-bold">MICHAEL BLAIS</h4>
-        </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/knight.jpg" alt="CHRIS KNIGHT" />
-          </div>
-          <h4 class="h4-bold">CHRIS KNIGHT</h4>
-        </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img class="img" src="../assets/images/talents/mr_k.jpg" alt="MR.K (MANAGER)" />
-          </div>
-          <h4 class="h4-bold">MR.K (MANAGER)</h4>
-        </a>
-
-        <a href="talent-card.html" class="featured-talents-card">
-          <div class="featured-talents-card-img">
-            <img
-              class="img"
-              src="../assets/images/talents/terry.jpg"
-              alt="Terry from Fubar (manager)"
-            />
-          </div>
-          <h4 class="h4-bold">Terry from Fubar (manager)</h4>
         </a>
       </div>
-      <!-- END TALENTS CONTAINER -->
-    </section>
-    <!-- END TALENTS  -->
+      <div class="search-dropdown">
+        <div class="search-dropdown-head">
+          <a href="../index.html" class="logo"><img class="img" src="../assets/svg/logo.svg" alt="logo" /></a>
 
-    <!-- DESCRIBE -->
-    <section
-      class="d-flex justify-content-center align-items-center bg-black text-white describe-block"
-    >
-      <p class="d-flex align-items-center text-uppercase">
-        <svg
-          width="21"
-          height="20"
-          viewBox="0 0 21 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g id="update">
-            <mask
-              id="mask0_317_3088"
-              style="mask-type: alpha"
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="21"
-              height="20"
-            >
-              <rect id="Bounding box" x="0.5" width="20" height="20" fill="#D9D9D9" />
-            </mask>
-            <g mask="url(#mask0_317_3088)">
-              <path
-                id="update_2"
-                d="M10.5 17.5C9.45833 17.5 8.48264 17.3021 7.57292 16.9062C6.66319 16.5104 5.87153 15.9757 5.19792 15.3021C4.52431 14.6285 3.98958 13.8368 3.59375 12.9271C3.19792 12.0174 3 11.0417 3 10C3 8.95833 3.19792 7.98264 3.59375 7.07292C3.98958 6.16319 4.52431 5.37153 5.19792 4.69792C5.87153 4.02431 6.66319 3.48958 7.57292 3.09375C8.48264 2.69792 9.45833 2.5 10.5 2.5C11.6389 2.5 12.7187 2.74306 13.7396 3.22917C14.7604 3.71528 15.625 4.40278 16.3333 5.29167V3.33333H18V8.33333H13V6.66667H15.2917C14.7222 5.88889 14.0208 5.27778 13.1875 4.83333C12.3542 4.38889 11.4583 4.16667 10.5 4.16667C8.875 4.16667 7.49653 4.73264 6.36458 5.86458C5.23264 6.99653 4.66667 8.375 4.66667 10C4.66667 11.625 5.23264 13.0035 6.36458 14.1354C7.49653 15.2674 8.875 15.8333 10.5 15.8333C11.9583 15.8333 13.2326 15.3611 14.3229 14.4167C15.4132 13.4722 16.0556 12.2778 16.25 10.8333H17.9583C17.75 12.7361 16.934 14.3229 15.5104 15.5938C14.0868 16.8646 12.4167 17.5 10.5 17.5ZM12.8333 13.5L9.66667 10.3333V5.83333H11.3333V9.66667L14 12.3333L12.8333 13.5Z"
-                fill="white"
-              />
-            </g>
-          </g>
-        </svg>
+          <div class="search-input-wrapper">
+            <div class="search-input">
+              <div class="search-input-icon">
+                <img class="img" src="../assets/svg/search-black.svg" alt="search" />
+              </div>
+              <input type="text" placeholder="Search for T-Shirts, Hoodies, Events|" />
+            </div>
 
-        <span class="text-gothic">30 day exchange</span>
-      </p>
-
-      <p class="d-flex align-items-center text-uppercase">
-        <svg
-          width="21"
-          height="20"
-          viewBox="0 0 21 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g id="mail">
-            <mask
-              id="mask0_317_3095"
-              style="mask-type: alpha"
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="21"
-              height="20"
-            >
-              <rect id="Bounding box" x="0.5" width="20" height="20" fill="#D9D9D9" />
-            </mask>
-            <g mask="url(#mask0_317_3095)">
-              <path
-                id="mail_2"
-                d="M3.83333 16.6667C3.375 16.6667 2.98264 16.5035 2.65625 16.1771C2.32986 15.8507 2.16667 15.4583 2.16667 15V5.00001C2.16667 4.54168 2.32986 4.14932 2.65625 3.82293C2.98264 3.49654 3.375 3.33334 3.83333 3.33334H17.1667C17.625 3.33334 18.0174 3.49654 18.3437 3.82293C18.6701 4.14932 18.8333 4.54168 18.8333 5.00001V15C18.8333 15.4583 18.6701 15.8507 18.3437 16.1771C18.0174 16.5035 17.625 16.6667 17.1667 16.6667H3.83333ZM10.5 10.8333L3.83333 6.66668V15H17.1667V6.66668L10.5 10.8333ZM10.5 9.16668L17.1667 5.00001H3.83333L10.5 9.16668ZM3.83333 6.66668V5.00001V15V6.66668Z"
-                fill="white"
-              />
-            </g>
-          </g>
-        </svg>
-
-        <span class="text-gothic">EMAIL SUPPORT</span>
-      </p>
-
-      <p class="d-flex align-items-center text-uppercase">
-        <svg
-          width="21"
-          height="20"
-          viewBox="0 0 21 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g id="local_shipping">
-            <mask
-              id="mask0_317_3102"
-              style="mask-type: alpha"
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="21"
-              height="20"
-            >
-              <rect id="Bounding box" x="0.5" width="20" height="20" fill="#D9D9D9" />
-            </mask>
-            <g mask="url(#mask0_317_3102)">
-              <path
-                id="local_shipping_2"
-                d="M5.5 16.6667C4.80555 16.6667 4.21527 16.4236 3.72916 15.9375C3.24305 15.4514 2.99999 14.8611 2.99999 14.1667H1.33333V5.00001C1.33333 4.54168 1.49652 4.14932 1.82291 3.82293C2.1493 3.49654 2.54166 3.33334 2.99999 3.33334H14.6667V6.66668H17.1667L19.6667 10V14.1667H18C18 14.8611 17.7569 15.4514 17.2708 15.9375C16.7847 16.4236 16.1944 16.6667 15.5 16.6667C14.8056 16.6667 14.2153 16.4236 13.7292 15.9375C13.2431 15.4514 13 14.8611 13 14.1667H8C8 14.8611 7.75694 15.4514 7.27083 15.9375C6.78472 16.4236 6.19444 16.6667 5.5 16.6667ZM5.5 15C5.73611 15 5.93402 14.9201 6.09375 14.7604C6.25347 14.6007 6.33333 14.4028 6.33333 14.1667C6.33333 13.9306 6.25347 13.7326 6.09375 13.5729C5.93402 13.4132 5.73611 13.3333 5.5 13.3333C5.26388 13.3333 5.06597 13.4132 4.90625 13.5729C4.74652 13.7326 4.66666 13.9306 4.66666 14.1667C4.66666 14.4028 4.74652 14.6007 4.90625 14.7604C5.06597 14.9201 5.26388 15 5.5 15ZM2.99999 12.5H3.66666C3.90277 12.25 4.17361 12.0486 4.47916 11.8958C4.78472 11.7431 5.125 11.6667 5.5 11.6667C5.875 11.6667 6.21527 11.7431 6.52083 11.8958C6.82638 12.0486 7.09722 12.25 7.33333 12.5H13V5.00001H2.99999V12.5ZM15.5 15C15.7361 15 15.934 14.9201 16.0937 14.7604C16.2535 14.6007 16.3333 14.4028 16.3333 14.1667C16.3333 13.9306 16.2535 13.7326 16.0937 13.5729C15.934 13.4132 15.7361 13.3333 15.5 13.3333C15.2639 13.3333 15.066 13.4132 14.9062 13.5729C14.7465 13.7326 14.6667 13.9306 14.6667 14.1667C14.6667 14.4028 14.7465 14.6007 14.9062 14.7604C15.066 14.9201 15.2639 15 15.5 15ZM14.6667 10.8333H18.2083L16.3333 8.33334H14.6667V10.8333Z"
-                fill="white"
-              />
-            </g>
-          </g>
-        </svg>
-
-        <span class="text-gothic">FREE USA SHIPPING</span>
-      </p>
-    </section>
-    <!-- DESCRIBE END -->
-
-    <!-- FOOTER -->
-    <footer class="bg-super-black">
-      <div class="container d-flex justify-content-between flex-wrap flex-lg-nowrap">
-        <div class="sing-up d-flex flex-wrap gap-2">
-          <h5 class="h4-bold text-white w-100 d-block text-center w-lg-auto text-lg-start">
-            SUBSCRIBE & SAVE
-          </h5>
-          <p class="p-sm-medium text-grey w-100 d-block text-center text-lg-start">
-            Sign up for the latest news, new drops, upcoming sale notices and more.
-          </p>
-          <div class="col-12 d-flex flex-lg-wrap gap-3 flex-wrap flex-sm-nowrap">
-            <input class="sing-up-send" type="text" placeholder="Enter your Email" />
-            <button class="btn btn-red col-3 mx-auto mx-0">SIGN UP NOW</button>
-          </div>
-          <div class="social-media d-flex w-100 justify-content-center justify-content-lg-start">
-            <a href="#">
-              <img src="../assets/svg/social-media/instagramm.svg" alt="instagram" />
-            </a>
-            <a href="#"> <img src="../assets/svg/social-media/twitter.svg" alt="twitter" /> </a>
-            <a href="#"> <img src="../assets/svg/social-media/fb.svg" alt="face_book" /></a>
+            <div class="search-input-icon search-close">
+              <img class="img" src="../assets/svg/close.svg" alt="close" />
+            </div>
           </div>
         </div>
-
-        <div class="navigation-block d-flex align-items-center align-items-lg-start">
-          <h5>DUNGEON WRESTLING</h5>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
-        </div>
-
-        <div class="navigation-block d-flex align-items-center align-items-lg-start">
-          <h5>DISCOVER</h5>
-          <ul>
-            <li><a href="#">Dungeon+</a></li>
-            <li><a href="../event-pages/event.html">Events</a></li>
-            <li><a href="#">Talent</a></li>
-            <li><a href="#">Tickets</a></li>
-          </ul>
-        </div>
-
-        <div class="navigation-block d-flex align-items-center align-items-lg-start">
-          <h5>SHOP</h5>
-          <ul>
-            <li><a href="#">T-Shirts</a></li>
-            <li><a href="#">Hoodies</a></li>
-            <li><a href="#">Hats</a></li>
-            <li><a href="#">Collectibles</a></li>
-            <li><a href="#">Shop All</a></li>
+        <div class="search-offer-container">
+          <ul class="search-offer">
+            <li>
+              <h5>Popular Searches</h5>
+            </li>
+            <li><a href="../shop/shop.html">T-Shirts</a></li>
+            <li><a href="../shop/shop.html">Hoodies</a></li>
+            <li><a href="../shop/shop.html">Bret Hart Collectible</a></li>
+            <li><a href="../shop/shop.html">Hats</a></li>
           </ul>
         </div>
       </div>
-      <div class="container">
-        <div class="footer-info">
-          <p>© 2023 DUNGEON WRESTLING.</p>
-          <p>
-            <a href="../policy-condition/policy.html">PRIVACY POLICY </a>
-            <span class="separator">| </span>
-            <a href="../policy-condition/conditions.html">TERMS & CONDITIONS</a>
-          </p>
+    </div>
+  </header>
+  <!-- END HEADER -->
+
+  <!-- TALENTS  -->
+  <section class="talents">
+    <h1 class="h1-super-big head-black-bg stars">TALENTS</h1>
+
+    <!-- TALENTS CONTAINER -->
+    <div class="talents-container">
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/aldis.jpg" alt="NICK ALDIS" />
+        </div>
+        <h4 class="h4-bold">NICK ALDIS</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/masters.jpg" alt="CHRIS MASTERS" />
+        </div>
+        <h4 class="h4-bold">CHRIS MASTERS</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/django.jpg" alt="DIRTY DJANGO" />
+        </div>
+        <h4 class="h4-bold">DIRTY DJANGO</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/smith.jpg" alt="HARRY SMITH" />
+        </div>
+        <h4 class="h4-bold">DIRTY DJANGO</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/pullman.jpg" alt="BRIAN PULLMAN JF" />
+        </div>
+        <h4 class="h4-bold">BRIAN PULLMAN JF</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/jabari.jpg" alt="MO JABARI" />
+        </div>
+        <h4 class="h4-bold">MO JABARI</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/singh.jpg" alt="RAJ SINGH" />
+        </div>
+        <h4 class="h4-bold">RAJ SINGH</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/krimson.jpg" alt="KRIMSON" />
+        </div>
+        <h4 class="h4-bold">KRIMSON</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/bruno.jpg" alt="BIG BRUNO" />
+        </div>
+        <h4 class="h4-bold">BIG BRUNO</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/buldogs.jpg" alt="BILLINGTON BULLDOGS" />
+        </div>
+        <h4 class="h4-bold">BILLINGTON BULLDOGS</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/boys.jpg" alt="BOLLYWOOD BOYS" />
+        </div>
+        <h4 class="h4-bold">BOLLYWOOD BOYS</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/sager.jpg" alt="ZOE SAGER" />
+        </div>
+        <h4 class="h4-bold">ZOE SAGER</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/taryn.jpg" alt="TARYN FROM ACCOUNTING" />
+        </div>
+        <h4 class="h4-bold">TARYN FROM ACCOUNTING</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/lawless.jpg" alt="AVA LAWLESS" />
+        </div>
+        <h4 class="h4-bold">AVA LAWLESS</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/moor.jpg" alt="SHAWN MOORE" />
+        </div>
+        <h4 class="h4-bold">SHAWN MOORE</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/allen.jpg" alt="MICHAEL RICHARD ALLEN" />
+        </div>
+        <h4 class="h4-bold">MICHAEL RICHARD ALLEN</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/blais.jpg" alt="MICHAEL BLAIS" />
+        </div>
+        <h4 class="h4-bold">MICHAEL BLAIS</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/knight.jpg" alt="CHRIS KNIGHT" />
+        </div>
+        <h4 class="h4-bold">CHRIS KNIGHT</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/mr_k.jpg" alt="MR.K (MANAGER)" />
+        </div>
+        <h4 class="h4-bold">MR.K (MANAGER)</h4>
+      </a>
+
+      <a href="talent-card.html" class="featured-talents-card">
+        <div class="featured-talents-card-img">
+          <img class="img" src="../assets/images/talents/terry.jpg" alt="Terry from Fubar (manager)" />
+        </div>
+        <h4 class="h4-bold">Terry from Fubar (manager)</h4>
+      </a>
+    </div>
+    <!-- END TALENTS CONTAINER -->
+  </section>
+  <!-- END TALENTS  -->
+
+  <!-- DESCRIBE -->
+  <section class="d-flex justify-content-center align-items-center bg-black text-white describe-block">
+    <p class="d-flex align-items-center text-uppercase">
+      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="update">
+          <mask id="mask0_317_3088" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="21"
+            height="20">
+            <rect id="Bounding box" x="0.5" width="20" height="20" fill="#D9D9D9" />
+          </mask>
+          <g mask="url(#mask0_317_3088)">
+            <path id="update_2"
+              d="M10.5 17.5C9.45833 17.5 8.48264 17.3021 7.57292 16.9062C6.66319 16.5104 5.87153 15.9757 5.19792 15.3021C4.52431 14.6285 3.98958 13.8368 3.59375 12.9271C3.19792 12.0174 3 11.0417 3 10C3 8.95833 3.19792 7.98264 3.59375 7.07292C3.98958 6.16319 4.52431 5.37153 5.19792 4.69792C5.87153 4.02431 6.66319 3.48958 7.57292 3.09375C8.48264 2.69792 9.45833 2.5 10.5 2.5C11.6389 2.5 12.7187 2.74306 13.7396 3.22917C14.7604 3.71528 15.625 4.40278 16.3333 5.29167V3.33333H18V8.33333H13V6.66667H15.2917C14.7222 5.88889 14.0208 5.27778 13.1875 4.83333C12.3542 4.38889 11.4583 4.16667 10.5 4.16667C8.875 4.16667 7.49653 4.73264 6.36458 5.86458C5.23264 6.99653 4.66667 8.375 4.66667 10C4.66667 11.625 5.23264 13.0035 6.36458 14.1354C7.49653 15.2674 8.875 15.8333 10.5 15.8333C11.9583 15.8333 13.2326 15.3611 14.3229 14.4167C15.4132 13.4722 16.0556 12.2778 16.25 10.8333H17.9583C17.75 12.7361 16.934 14.3229 15.5104 15.5938C14.0868 16.8646 12.4167 17.5 10.5 17.5ZM12.8333 13.5L9.66667 10.3333V5.83333H11.3333V9.66667L14 12.3333L12.8333 13.5Z"
+              fill="white" />
+          </g>
+        </g>
+      </svg>
+
+      <span class="text-gothic">30 day exchange</span>
+    </p>
+
+    <p class="d-flex align-items-center text-uppercase">
+      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="mail">
+          <mask id="mask0_317_3095" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="21"
+            height="20">
+            <rect id="Bounding box" x="0.5" width="20" height="20" fill="#D9D9D9" />
+          </mask>
+          <g mask="url(#mask0_317_3095)">
+            <path id="mail_2"
+              d="M3.83333 16.6667C3.375 16.6667 2.98264 16.5035 2.65625 16.1771C2.32986 15.8507 2.16667 15.4583 2.16667 15V5.00001C2.16667 4.54168 2.32986 4.14932 2.65625 3.82293C2.98264 3.49654 3.375 3.33334 3.83333 3.33334H17.1667C17.625 3.33334 18.0174 3.49654 18.3437 3.82293C18.6701 4.14932 18.8333 4.54168 18.8333 5.00001V15C18.8333 15.4583 18.6701 15.8507 18.3437 16.1771C18.0174 16.5035 17.625 16.6667 17.1667 16.6667H3.83333ZM10.5 10.8333L3.83333 6.66668V15H17.1667V6.66668L10.5 10.8333ZM10.5 9.16668L17.1667 5.00001H3.83333L10.5 9.16668ZM3.83333 6.66668V5.00001V15V6.66668Z"
+              fill="white" />
+          </g>
+        </g>
+      </svg>
+
+      <span class="text-gothic">EMAIL SUPPORT</span>
+    </p>
+
+    <p class="d-flex align-items-center text-uppercase">
+      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="local_shipping">
+          <mask id="mask0_317_3102" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="21"
+            height="20">
+            <rect id="Bounding box" x="0.5" width="20" height="20" fill="#D9D9D9" />
+          </mask>
+          <g mask="url(#mask0_317_3102)">
+            <path id="local_shipping_2"
+              d="M5.5 16.6667C4.80555 16.6667 4.21527 16.4236 3.72916 15.9375C3.24305 15.4514 2.99999 14.8611 2.99999 14.1667H1.33333V5.00001C1.33333 4.54168 1.49652 4.14932 1.82291 3.82293C2.1493 3.49654 2.54166 3.33334 2.99999 3.33334H14.6667V6.66668H17.1667L19.6667 10V14.1667H18C18 14.8611 17.7569 15.4514 17.2708 15.9375C16.7847 16.4236 16.1944 16.6667 15.5 16.6667C14.8056 16.6667 14.2153 16.4236 13.7292 15.9375C13.2431 15.4514 13 14.8611 13 14.1667H8C8 14.8611 7.75694 15.4514 7.27083 15.9375C6.78472 16.4236 6.19444 16.6667 5.5 16.6667ZM5.5 15C5.73611 15 5.93402 14.9201 6.09375 14.7604C6.25347 14.6007 6.33333 14.4028 6.33333 14.1667C6.33333 13.9306 6.25347 13.7326 6.09375 13.5729C5.93402 13.4132 5.73611 13.3333 5.5 13.3333C5.26388 13.3333 5.06597 13.4132 4.90625 13.5729C4.74652 13.7326 4.66666 13.9306 4.66666 14.1667C4.66666 14.4028 4.74652 14.6007 4.90625 14.7604C5.06597 14.9201 5.26388 15 5.5 15ZM2.99999 12.5H3.66666C3.90277 12.25 4.17361 12.0486 4.47916 11.8958C4.78472 11.7431 5.125 11.6667 5.5 11.6667C5.875 11.6667 6.21527 11.7431 6.52083 11.8958C6.82638 12.0486 7.09722 12.25 7.33333 12.5H13V5.00001H2.99999V12.5ZM15.5 15C15.7361 15 15.934 14.9201 16.0937 14.7604C16.2535 14.6007 16.3333 14.4028 16.3333 14.1667C16.3333 13.9306 16.2535 13.7326 16.0937 13.5729C15.934 13.4132 15.7361 13.3333 15.5 13.3333C15.2639 13.3333 15.066 13.4132 14.9062 13.5729C14.7465 13.7326 14.6667 13.9306 14.6667 14.1667C14.6667 14.4028 14.7465 14.6007 14.9062 14.7604C15.066 14.9201 15.2639 15 15.5 15ZM14.6667 10.8333H18.2083L16.3333 8.33334H14.6667V10.8333Z"
+              fill="white" />
+          </g>
+        </g>
+      </svg>
+
+      <span class="text-gothic">FREE USA SHIPPING</span>
+    </p>
+  </section>
+  <!-- DESCRIBE END -->
+
+  <!-- FOOTER -->
+  <footer class="bg-super-black">
+    <div class="container d-flex justify-content-between flex-wrap flex-lg-nowrap">
+      <div class="sing-up d-flex flex-wrap gap-2">
+        <h5 class="h4-bold text-white w-100 d-block text-center w-lg-auto text-lg-start">
+          SUBSCRIBE & SAVE
+        </h5>
+        <p class="p-sm-medium text-grey w-100 d-block text-center text-lg-start">
+          Sign up for the latest news, new drops, upcoming sale notices and more.
+        </p>
+        <div class="col-12 d-flex flex-lg-wrap gap-3 flex-wrap flex-sm-nowrap">
+          <input class="sing-up-send" type="text" placeholder="Enter your Email" />
+          <button class="btn btn-red col-3 mx-auto mx-0">SIGN UP NOW</button>
+        </div>
+        <div class="social-media d-flex w-100 justify-content-center justify-content-lg-start">
+          <a href="#">
+            <img src="../assets/svg/social-media/instagramm.svg" alt="instagram" />
+          </a>
+          <a href="#"> <img src="../assets/svg/social-media/twitter.svg" alt="twitter" /> </a>
+          <a href="#"> <img src="../assets/svg/social-media/fb.svg" alt="face_book" /></a>
         </div>
       </div>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
-    <script src="../js/owl/owl.carousel.min.js"></script>
-    <script src="../js/carousel.js"></script>
-    <script src="../js/main.js"></script>
-  </body>
+      <div class="navigation-block d-flex align-items-center align-items-lg-start">
+        <h5>DUNGEON WRESTLING</h5>
+        <ul>
+          <li><a href="../service/about.html">About</a></li>
+          <li><a href="../service/news.html">News</a></li>
+          <li><a href="../service/faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="navigation-block d-flex align-items-center align-items-lg-start">
+        <h5>DISCOVER</h5>
+        <ul>
+          <li><a href="../dungeon-pages/dungeon.html">Dungeon+</a></li>
+          <li><a href="../event-pages/event.html">Events</a></li>
+          <li><a href="../talents/talents.html">Talent</a></li>
+          <li><a href="../tickets-page/tickets.html">Tickets</a></li>
+        </ul>
+      </div>
+
+      <div class="navigation-block d-flex align-items-center align-items-lg-start">
+        <h5>SHOP</h5>
+        <ul>
+          <li><a href="../shop/shop.html">T-Shirts</a></li>
+          <li><a href="../shop/shop.html">Hoodies</a></li>
+          <li><a href="../shop/shop.html">Hats</a></li>
+          <li><a href="../shop/shop.html">Collectibles</a></li>
+          <li><a href="../shop/shop.html">Shop All</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-info">
+        <p>© 2023 DUNGEON WRESTLING.</p>
+        <p>
+          <a href="../policy-condition/policy.html">PRIVACY POLICY </a>
+          <span class="separator">| </span>
+          <a href="../policy-condition/conditions.html">TERMS & CONDITIONS</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
+  <script src="../js/owl/owl.carousel.min.js"></script>
+  <script src="../js/carousel.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
 </html>

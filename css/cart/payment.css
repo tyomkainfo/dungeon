@@ -1,0 +1,94 @@
+.payment .bread-crumps {
+  margin-top: 42px;
+  margin-right: auto;
+}
+
+.payment .vybe-contact {
+  margin-top: 32px;
+}
+
+.payment .vybe-shipping-methods {
+  margin-top: 32px;
+  gap: 8px;
+}
+
+.payment .vybe-shipping-methods .vybe-shipping-container {
+  margin-top: 12px;
+}
+
+.payment .payment-shipping-block {
+  padding: 30px;
+  gap: 0;
+}
+
+.payment .vybe-shipping-container-card.no-border {
+  padding-bottom: 0;
+  border: none;
+  margin-bottom: 34px;
+}
+
+.payment .margin-top {
+  margin-top: 16px;
+}
+
+.payment .hr {
+  margin: 24px 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--gainsboro);
+}
+
+.payment .vybe-shipping-container .vybe-shipping-container-card {
+  align-items: center;
+}
+
+.payment .vybe-shipping-container-card-left-side {
+  align-items: center;
+}
+
+.payment .option.shipping-title {
+  color: var(--darkSlate);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+
+  @media (min-width: 400px) {
+    font-size: 16px;
+  }
+}
+.payment .cost .cost-img {
+  max-width: 25px;
+
+  @media (min-width: 400px) {
+    max-width: 30px;
+  }
+
+  @media (min-width: 576px) {
+    max-width: 40px;
+  }
+}
+
+.payment .cost .cost-img img {
+  object-fit: cover;
+  height: inherit;
+  width: 100%;
+}
+
+.payment .btns {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 20px;
+  margin: 32px 0 52px;
+  width: 100%;
+
+  @media (min-width: 400px) {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 70px;
+  }
+}
+
+.payment .btns .btn-black {
+  width: 100%;
+}

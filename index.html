@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dungeon</title>
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,10 +13,96 @@
     <link rel="stylesheet" href="css/owl/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl/owl.theme.default.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="/assets/svg/logo.svg" />
+    <link rel="shortcut icon" href="./assets/svg/logo.svg" />
   </head>
 
   <body>
+    <div class="overlay" id="overlay">
+      <div class="side-menu-cart">
+        <div class="side-menu-cart-head">
+          <div class="main">
+            <h3 class="h1-mid-bold">Your Cart</h3>
+            <p class="p-sm-medium">1 Product</p>
+          </div>
+
+          <div class="close" id="close_cart">
+            <img src="./assets/svg/close-cart.svg" alt="close" class="img" />
+          </div>
+        </div>
+
+        <div class="side-menu-cart-products scroll-grey-vertical">
+          <div class="side-menu-cart-products-card">
+            <div class="products-head">
+              <div class="side-menu-cart-products-card-img">
+                <img src="./assets/images/shop/jersey.png" alt="jersey" class="img" />
+              </div>
+
+              <p class="p-sm-medium">Dungeon Wrestling Signature Hoodie</p>
+
+              <div class="delete">
+                <img src="./assets/svg/close-cart.svg" alt="delete" class="img" />
+              </div>
+            </div>
+            <div class="products-footer">
+              <p class="products-footer-price">$42.99 CAD</p>
+
+              <div class="cart-item_quantity">
+                <img class="minus" src="assets/svg/minus-grey.svg" alt="minus" />
+                <span class="cart-item_quantity-number text-center">1</span>
+                <img class="plus" src="assets/svg/plus-grey.svg" alt="plus" />
+              </div>
+            </div>
+          </div>
+
+          <div class="side-menu-cart-products-card">
+            <div class="products-head">
+              <div class="side-menu-cart-products-card-img">
+                <img src="assets/images/shop/jersey.png" alt="jersey" class="img" />
+              </div>
+
+              <p class="p-sm-medium">Dungeon Wrestling Signature Hoodie</p>
+
+              <div class="delete">
+                <img src="assets/svg/close-cart.svg" alt="delete" class="img" />
+              </div>
+            </div>
+            <div class="products-footer">
+              <p class="products-footer-price">$42.99 CAD</p>
+
+              <div class="cart-item_quantity">
+                <img class="minus" src="../assets/svg/minus-grey.svg" alt="minus" />
+                <span class="cart-item_quantity-number text-center">1</span>
+                <img class="plus" src="../assets/svg/plus-grey.svg" alt="plus" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-menu-cart-count">
+          <div class="side-menu-cart-count-item">
+            <p class="p-sm-medium text-grey-dark">Subtotal</p>
+            <p class="p-mid-medium">$162.99</p>
+          </div>
+
+          <div class="side-menu-cart-count-item">
+            <p class="p-sm-medium text-grey-dark">Shipping</p>
+            <p class="p-sm-medium text-grey-md">Calculated at next step</p>
+          </div>
+
+          <div class="side-menu-cart-count-total">
+            <p class="p-mid-medium">Total</p>
+
+            <div class="total-bill">
+              <p class="currency">USD</p>
+              <p class="p-lg-medium">$162.99</p>
+            </div>
+          </div>
+
+          <button class="btn btn-black to-cart">CHECK OUT</button>
+        </div>
+      </div>
+    </div>
+
     <header class="bg-super-black position-relative">
       <div class="header-overlay bg-super-black">
         <div class="container d-flex align-items-center justify-content-between bg-super-black">
@@ -147,7 +232,7 @@
             </div>
           </a>
           <a
-            href="#"
+            href="shop/shop.html"
             class="shop-item d-flex flex-lg-column-reverse align-items-center justify-content-between justify-content-lg-center gap-3"
           >
             <p class="shop-item-title text-uppercase text-gothic mb-0">SWEATSHIRTS</p>
@@ -160,7 +245,7 @@
             </div>
           </a>
           <a
-            href="#"
+            href="shop/shop.html"
             class="shop-item d-flex flex-lg-column-reverse align-items-center justify-content-between justify-content-lg-center gap-3"
           >
             <p class="shop-item-title text-uppercase text-gothic mb-0">COLLECTIBLES</p>
@@ -173,7 +258,7 @@
             </div>
           </a>
           <a
-            href="#"
+            href="shop/shop.html"
             class="shop-item d-flex flex-lg-column-reverse align-items-center justify-content-between justify-content-lg-center gap-3"
           >
             <p class="shop-item-title text-uppercase text-gothic mb-0">COLLECTIBLES</p>
@@ -186,7 +271,7 @@
             </div>
           </a>
           <a
-            href="#"
+            href="shop/shop.html"
             class="shop-item d-flex flex-lg-column-reverse align-items-center justify-content-between justify-content-lg-center gap-3"
           >
             <p class="shop-item-title text-uppercase text-gothic mb-0">COLLECTIBLES</p>
@@ -223,10 +308,10 @@
               <li>
                 <h5>Popular Searches</h5>
               </li>
-              <li><a href="#">T-Shirts</a></li>
-              <li><a href="#">Hoodies</a></li>
-              <li><a href="#">Bret Hart Collectible</a></li>
-              <li><a href="#">Hats</a></li>
+              <li><a href="shop/shop.html">T-Shirts</a></li>
+              <li><a href="shop/shop.html">Hoodies</a></li>
+              <li><a href="shop/shop.html">Bret Hart Collectible</a></li>
+              <li><a href="shop/shop.html">Hats</a></li>
             </ul>
           </div>
         </div>
@@ -348,6 +433,13 @@
 
     <section class="top-picks">
       <h3 class="h1-mid-bold stars mx-auto">TOP PICKS</h3>
+      <img
+        style="margin-inline: auto; display: block; cursor: pointer"
+        src="./assets/svg/cart_black.svg"
+        alt="cart"
+        id="cart"
+      />
+
       <div class="tabs-container">
         <button class="tab active">SHOP ALL</button>
         <button class="tab">T-SHIRT</button>
@@ -802,6 +894,7 @@
         </div>
       </div>
     </section>
+
     <!-- DESCRIBE -->
     <section
       class="d-flex justify-content-center align-items-center bg-black text-white describe-block"
@@ -932,30 +1025,30 @@
         <div class="navigation-block d-flex align-items-center align-items-lg-start">
           <h5>DUNGEON WRESTLING</h5>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="service/about.html">About</a></li>
+            <li><a href="service/news.html">News</a></li>
+            <li><a href="service/faq.html">FAQ</a></li>
           </ul>
         </div>
 
         <div class="navigation-block d-flex align-items-center align-items-lg-start">
           <h5>DISCOVER</h5>
           <ul>
-            <li><a href="#">Dungeon+</a></li>
+            <li><a href="dungeon-pages/dungeon.html">Dungeon+</a></li>
             <li><a href="event-pages/event.html">Events</a></li>
             <li><a href="talents/talents.html">Talent</a></li>
-            <li><a href="#">Tickets</a></li>
+            <li><a href="tickets-page/tickets.html">Tickets</a></li>
           </ul>
         </div>
 
         <div class="navigation-block d-flex align-items-center align-items-lg-start">
           <h5>SHOP</h5>
           <ul>
-            <li><a href="#">T-Shirts</a></li>
-            <li><a href="#">Hoodies</a></li>
-            <li><a href="#">Hats</a></li>
-            <li><a href="#">Collectibles</a></li>
-            <li><a href="#">Shop All</a></li>
+            <li><a href="shop/shop.html">T-Shirts</a></li>
+            <li><a href="shop/shop.html">Hoodies</a></li>
+            <li><a href="shop/shop.html">Hats</a></li>
+            <li><a href="shop/shop.html">Collectibles</a></li>
+            <li><a href="shop/shop.html">Shop All</a></li>
           </ul>
         </div>
       </div>

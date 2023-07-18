@@ -1,0 +1,351 @@
+.vybe-input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 14px 16px;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--grey-medium);
+}
+
+.vybe-input-wrapper .vybe-input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.14px;
+  color: var(--super-black);
+}
+
+.vybe-input-wrapper .vybe-input::placeholder {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.14px;
+  color: var(--grey-medium);
+}
+
+.vybe-input-wrapper input:disabled .vybe-input-wrapper {
+  user-select: none;
+}
+
+.vybe-input-wrapper:focus-within {
+  border-color: var(--vybe-blue);
+}
+
+.vybe-input-wrapper .wrapper-input-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.vybe-input-wrapper .input-img {
+  display: flex;
+  align-items: center;
+  max-width: 20px;
+}
+
+.vybe-input-wrapper.label {
+  padding: 8px 14px;
+}
+
+.vybe-label {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.4px;
+}
+
+.vybe-checkbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.vybe-checkbox input {
+  display: none;
+}
+
+.vybe-custom-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border: 1px solid black;
+}
+
+.vybe-checkbox input:not(:checked) + .vybe-custom-checkbox img {
+  opacity: 0;
+}
+
+.vybe-checkbox input:checked + .vybe-custom-checkbox img {
+  opacity: 1;
+}
+
+.vybe-checkbox input:checked + .vybe-custom-checkbox {
+  background-color: black;
+}
+
+.vybe-checkbox .checkbox-label {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.14px;
+  color: #121212;
+  user-select: none;
+  vertical-align: middle;
+}
+
+.vybe-input-wrapper .drop-down {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+.vybe-input-wrapper .drop-down::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 20px;
+  background-color: #d9d9d9;
+  top: -4px;
+  left: -16px;
+}
+
+.vybe-input-wrapper .drop-down-img {
+  margin-top: -8px;
+  width: 12px;
+
+  transition: all 0.16s ease-in;
+}
+
+.vybe-input-wrapper .drop-down-img img {
+  object-fit: cover;
+}
+
+.vybe-input-wrapper.open {
+  border-color: #383838;
+}
+
+.vybe-input-wrapper.open .drop-down-img {
+  transform: rotate(180deg);
+  transition: all 0.16s ease-in;
+}
+
+.vibe-input-block-wrapper {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  @media (min-width: 576px) {
+    font-size: 16px;
+    gap: 24px;
+  }
+}
+
+.bread-crumps {
+  display: flex;
+  gap: 32px;
+}
+
+.bread-crumps .crump {
+  position: relative;
+}
+
+.bread-crumps .crump:not(:last-child)::after {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  content: '';
+  display: block;
+  right: -24px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-image: url(../assets/svg/arrow-right.svg);
+  background-size: cover;
+  user-select: none;
+}
+
+.vybe-return {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  color: #848484;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+.vybe-return img {
+  width: 22px;
+  height: 22px;
+}
+
+.vybe-contact,
+.vybe-shipping-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid #383838;
+
+  @media (min-width: 576px) {
+    padding: 12px 20px;
+  }
+}
+
+.vybe-contact-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  gap: 10px;
+
+  @media (min-width: 576px) {
+    gap: 0;
+  }
+}
+
+.vybe-contact-card:not(:last-child) {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.vybe-contact-card-left-side {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+
+  @media (min-width: 576px) {
+    gap: 32px;
+  }
+}
+
+.vybe-contact-card-left-side .head,
+.vybe-contact-card-left-side .contact-data,
+.vybe-contact-card .change {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.28px;
+
+  @media (min-width: 576px) {
+    font-size: 14px;
+  }
+}
+
+.vybe-contact-card-left-side .head {
+  min-width: 56px;
+  color: #848484;
+}
+
+.vybe-contact-card-left-side .contact-data {
+  max-width: 280px;
+  color: #383838;
+}
+
+.vybe-contact-card-left-side .contact-data .price {
+  font-weight: 800;
+}
+
+.vybe-contact-card .change {
+  color: #d00d29;
+  cursor: pointer;
+}
+
+.vybe-shipping-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.vybe-shipping-methods h3 {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  color: #121212;
+}
+
+.vybe-shipping-methods_subtitle {
+  color: var(--grey-medium);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.12px;
+}
+
+.vybe-shipping-container-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  cursor: pointer;
+}
+.vybe-shipping-container-card:not(:last-child) {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.vybe-shipping-container-card input {
+  display: none;
+}
+
+.custom-red-check-box {
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 2px solid #d00d29;
+}
+
+.vybe-shipping-container-card-left-side {
+  display: flex;
+  gap: 13px;
+}
+
+.vybe-shipping-container-card input:checked + .custom-red-check-box {
+  border-width: 8px;
+}
+.vybe-shipping-container-card .cost,
+.vybe-shipping-container-card .option {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0.28px;
+  color: #383838;
+}
+
+.vybe-shipping-container-card .cost {
+  display: flex;
+  gap: 5px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.vybe-shipping-container-card .cost img {
+  width: 40px;
+  height: 28px;
+}

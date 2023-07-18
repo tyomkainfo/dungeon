@@ -1,0 +1,101 @@
+.dungeon-collection {
+  padding: 40px 0 90px;
+}
+
+.banner.container {
+  padding: 0 20px 90px;
+
+  @media (min-width: 768px) {
+    padding: 0 60px 90px;
+  }
+}
+
+.banner-block {
+  position: relative;
+  width: 100%;
+}
+
+.banner-btns {
+  position: absolute;
+  right: 60px;
+  bottom: 60px;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 2;
+  }
+}
+
+.banner-item {
+  position: relative;
+}
+
+.banner-item-info {
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 324px;
+  color: var(--white);
+  transform: translateX(-50%);
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    top: 50%;
+    left: 60px;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+}
+
+.banner-item-info span {
+  display: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  @media (min-width: 768px) {
+    display: flex;
+    font-size: 24px;
+  }
+
+  @media (min-width: 1140px) {
+    font-size: 24px;
+  }
+}
+
+.banner-item-info h3 {
+  display: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+
+  @media (min-width: 768px) {
+    display: flex;
+    font-size: 32px;
+  }
+
+  @media (min-width: 1140px) {
+    font-size: 48px;
+  }
+}
+
+.banner-item-info button {
+  width: fit-content;
+}
+
+.banner-item .banner-item_img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 0;
+}

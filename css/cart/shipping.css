@@ -1,0 +1,30 @@
+.shipping .bread-crumps {
+  margin-top: 42px;
+  margin-right: auto;
+}
+
+.shipping .vybe-contact {
+  margin-top: 32px;
+}
+
+.shipping .vybe-shipping-methods {
+  margin-top: 32px;
+}
+
+.shipping .btns {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 20px;
+  margin-top: 32px;
+  width: 100%;
+
+  @media (min-width: 576px) {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 50px;
+  }
+}
+
+.shipping .btns .btn-black {
+  width: 100%;
+}
